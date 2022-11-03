@@ -1,0 +1,33 @@
+* {
+    background-color: #2F322F;
+}
+
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5em;
+}
+
+.choices img {
+    width: 2em;
+    height: 2em;
+}
+
+.choice {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 4em;
+    transition: 200ms;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+}
+
+.result {
+    display: flex;
+    justify-content: space-evenly;
+
+}
