@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Oswald&display=swap');
+
 * {
     background-color: #2F322F;
 }
-
-
+/* Game Container Styling*/
+.game-container {
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+/* Game Choices stylings */
 .choices {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 5em;
 }
 
-.choices img {
-    width: 2em;
-    height: 2em;
-}
 
 .choice {
     background: none;
@@ -22,12 +25,55 @@
     transition: 200ms;
 }
 
+.choice-image {
+    width: 2em;
+    height: 2em;
+}
+
 .choice:hover {
     transform: scale(1.1);
 }
-
+/* Results Area */
 .result {
-    display: flex;
-    justify-content: space-evenly;
-
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    color: #FFFAF1;
 }
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.scoreboard h2 {
+    margin: 2rem;
+}
+
+.score {
+    font-size: 2rem;
+    color: lightgray;
+}
+
+.result-choice img {
+    width: 4em;
+    height: 4em;
+}
+
+.result-choice {
+    opacity: .5;
+}
+
+.result-choice.winner {
+    opacity: 1;
+    font-size: 1.2em;
+}
+
+
+

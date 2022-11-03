@@ -10,19 +10,27 @@
 <body>
     <div class="game-container">
         <div class="choices">
-            <button class="choice"><img src="./assets/images/rock.png" alt="Game Rock"></button>
-            <button class="choice"><img src="./assets/images/paper.png" alt="Game Paper"></button>
-            <button class="choice"><img src="./assets/images/scissors.png" alt="Game Scissors"></button>
+            <button class="choice" data-choice="rock">
+                <img class="choice-image" src="./assets/images/rock.png" alt="Game Rock">
+            </button>
+            <button class="choice" data-choice="paper">
+                <img class="choice-image" src="./assets/images/paper.png" alt="Game Paper">
+            </button>
+            <button class="choice" data-choice="scissors">
+                <img class="choice-image" src="./assets/images/scissors.png" alt="Game Scissors">
+            </button>
         </div>
         <div class="result">
-            <div>
-                You
+            <div class="scoreboard">
+                <h2>YOU</h2>
                 <span class="score">0</span>
             </div>
-            <div>
-                Computer
+            <div class="scoreboard">
+                <h2>COMPUTER</h2>
                 <span class="score">0</span>
             </div>
+            <!-- <div class="result-choice"><img src="./assets/images/rock.png" alt="Game Rock"></div>
+            <div class="result-choice winner"><img src="./assets/images/paper.png" alt="Game Paper"></div> -->
         </div>
     </div>
 
