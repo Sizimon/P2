@@ -3,3 +3,10 @@
 3. Game should have an appealing colour scheme
 4. Game should keep track of scores and display them appropriately
 5. The game should have past matches shown in a transparent state as a history beneath the game window
+
+
+
+
+
+Issues encountered: 
+Struggling to add images into the history match panel
