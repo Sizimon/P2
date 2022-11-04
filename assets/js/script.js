@@ -1,5 +1,7 @@
 const choiceButtons = document.querySelectorAll('[data-choice]');
-const finalColumn = document.querySelector('[data-column]')
+const finalColumn = document.querySelector('[data-column]');
+const yourScoreSpan = document.querySelector('[data-your-score]');
+const computerScoreSpan = document.querySelector('[data-computer-score]')
 /** Global constant objects and values*/
 const CHOICES = [
     {
@@ -40,8 +42,11 @@ function makeChoice(choice) {
     const computerChoice = randomChoice();
     const youWin = isWinner(choice, computerChoice);
     const computerWin = isWinner(computerChoice, choice);
+
     addChoiceResult(computerChoice, computerWin);
     addChoiceResult(choice, youWin);
+    if (youWin) incrementScore(yourScoreSpan);
+    if (computerWin) incrementScore(computerScoreSpan);
 }
 /* Creates Div and Appends image corresponding to choice, adds it under the scoreboard */
 function addChoiceResult(choice, winner) {
@@ -65,4 +70,8 @@ function randomChoice() {
 
 function isWinner(choice, computerChoice) {
     return choice.beats === computerChoice.name
+}
+
+function incrementScore(scoreSpan) {
+    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
 }
