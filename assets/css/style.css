@@ -117,8 +117,10 @@ header h1 {
     background-color: #FFFAF1;
 }
 
-.popup button {
+.popup-btn {
     margin-bottom: 1rem;
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFAF1;
 }
 
 

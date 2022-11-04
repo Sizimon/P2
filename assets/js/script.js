@@ -96,9 +96,15 @@ function openPopupLoser() {
     popupLose.classList.add('open-popup')
 }
 
+/* Reset button for the game (brings everything back to default) */
+
 function resetGame() {
     popupWin.classList.remove('open-popup')
     popupLose.classList.remove('open-popup')
     yourScoreSpan.innerText = '0'
     computerScoreSpan.innerText = '0'
+    const resets = document.querySelectorAll('.result-choice', 'winner');
+    resets.forEach(reset => {
+        reset.remove();
+    });
 }
