@@ -84,5 +84,42 @@ header h1 {
     font-size: 1.2em;
 }
 
+/* Pop up window */
+
+
+.popup {
+    width: 200px;
+    background-color: #FFFAF1;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px;
+    transition: 0.2s;
+}
+
+.open-popup {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFAF1;
+}
+
+.popup p {
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFAF1;
+}
+
+.popup button {
+    margin-bottom: 1rem;
+}
+
 
 

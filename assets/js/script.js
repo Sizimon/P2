@@ -47,6 +47,12 @@ function makeChoice(choice) {
     addChoiceResult(choice, youWin);
     if (youWin) incrementScore(yourScoreSpan);
     if (computerWin) incrementScore(computerScoreSpan);
+
+    if (yourScoreSpan.innerHTML == '3') {
+        openPopupWinner();
+    } else if (computerScoreSpan.innerHTML == '3') {
+        openPopupLoser();
+    }
 }
 /* Creates Div and Appends image corresponding to choice, adds it under the scoreboard */
 function addChoiceResult(choice, winner) {
@@ -54,11 +60,10 @@ function addChoiceResult(choice, winner) {
     const img = document.createElement('img');
     img.src = imgID;
     const div = document.createElement('div');
-    div.appendChild(img)
+    div.appendChild(img);
     div.classList.add('result-choice');
     if (winner) div.classList.add('winner');
-    finalColumn.after(div);
-    
+    finalColumn.after(div);    
 }
 /* Function for the computer to make a random choice */
 function randomChoice() {
@@ -72,6 +77,28 @@ function isWinner(choice, computerChoice) {
     return choice.beats === computerChoice.name
 }
 
+/* Function that increments the score by one  */
+
 function incrementScore(scoreSpan) {
     scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
+}
+
+/* Pop up window function */
+
+const popupWin = document.getElementById('popup-winner');
+const popupLose = document.getElementById('popup-loser');
+
+function openPopupWinner() {
+    popupWin.classList.add('open-popup')
+}
+
+function openPopupLoser() {
+    popupLose.classList.add('open-popup')
+}
+
+function resetGame() {
+    popupWin.classList.remove('open-popup')
+    popupLose.classList.remove('open-popup')
+    yourScoreSpan.innerText = '0'
+    computerScoreSpan.innerText = '0'
 }
