@@ -54,6 +54,11 @@ function makeChoice(choice) {
     } else if (computerScoreSpan.innerHTML == '3') {
         openPopupLoser();
     }
+    
+/**
+ * Displays whether you won/lost or drew the game
+ */
+
     function displayResult() {
         const matchResult = document.getElementById('display-result');
         if (youWin) { matchResult.innerHTML = "You Won" 
@@ -133,18 +138,4 @@ function submitName() {
     playerName.innerHTML = localStorage.getItem('username');
 }
 
-/**
- * Displays whether you won/lost or drew the game
- */
 
-function displayResult() {
-    const matchResult = document.getElementById('display-result');
-    if (youWin) { matchResult.innerHTML = "You Won" 
-    } else if (computerWin) {
-        matchResult.innerHTML = "You Lost";
-    } else {
-        matchResult.innerHTML = "Draw";
-    }
-    
-    
-}
