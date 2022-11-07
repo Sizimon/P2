@@ -63,6 +63,7 @@ header h1 {
 
 .scoreboard h2 {
     margin: 2rem;
+    text-transform: uppercase;
 }
 
 .score {
@@ -82,6 +83,18 @@ header h1 {
 .result-choice.winner {
     opacity: 1;
     font-size: 1.2em;
+}
+
+.win-lose-draw h2 {
+    font-size: 2rem;
+    background-color: #2F322F;
+    font-family: 'Oswald', sans-serif;
+    opacity: 0.6;
+    color: #FFFAF1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Pop up window */
@@ -157,6 +170,7 @@ header h1 {
 #landing-popup input {
     font-size: 1.5rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #landing-popup button {

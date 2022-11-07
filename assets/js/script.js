@@ -21,10 +21,6 @@ const CHOICES = [
     }
 ]
 
-/* Lets the user input their name into the form and has it stored in local storage to use in scoreboard */
-
-
-
 /**
  * adds click event to all the buttons and differentiates them based of their .name value
  */
@@ -58,6 +54,16 @@ function makeChoice(choice) {
     } else if (computerScoreSpan.innerHTML == '3') {
         openPopupLoser();
     }
+    function displayResult() {
+        const matchResult = document.getElementById('display-result');
+        if (youWin) { matchResult.innerHTML = "You Won" 
+        } else if (computerWin) {
+            matchResult.innerHTML = "You Lost";
+        } else {
+            matchResult.innerHTML = "Draw";
+        }
+        }
+    displayResult();
 }
 /* Creates Div and Appends image corresponding to choice, adds it under the scoreboard */
 function addChoiceResult(choice, winner) {
@@ -115,7 +121,7 @@ function resetGame() {
 }
 
 /* Enter name screen popup functions */
-
+/* Lets the user input their name into the form and has it stored in local storage to use in scoreboard */
 function submitName() {
     const inputName = document.getElementById('username');
     localStorage.setItem('username', inputName.value);
@@ -124,5 +130,21 @@ function submitName() {
     const popupBox = document.getElementById('landing-popup');
     popupBox.classList.add('landing-popup-close');
     const playerName = document.getElementById('playername');
-    playerName.innerHTML = localStorage.getItem('username')
+    playerName.innerHTML = localStorage.getItem('username');
+}
+
+/**
+ * Displays whether you won/lost or drew the game
+ */
+
+function displayResult() {
+    const matchResult = document.getElementById('display-result');
+    if (youWin) { matchResult.innerHTML = "You Won" 
+    } else if (computerWin) {
+        matchResult.innerHTML = "You Lost";
+    } else {
+        matchResult.innerHTML = "Draw";
+    }
+    
+    
 }
