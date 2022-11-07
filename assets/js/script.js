@@ -54,7 +54,7 @@ function makeChoice(choice) {
     } else if (computerScoreSpan.innerHTML == '3') {
         openPopupLoser();
     }
-    
+
 /**
  * Displays whether you won/lost or drew the game
  */
@@ -130,8 +130,6 @@ function resetGame() {
 function submitName() {
     const inputName = document.getElementById('username');
     localStorage.setItem('username', inputName.value);
-    const storedName = localStorage.getItem('username');
-    console.log(storedName);
     const popupBox = document.getElementById('landing-popup');
     popupBox.classList.add('landing-popup-close');
     const playerName = document.getElementById('playername');
