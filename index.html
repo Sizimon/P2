@@ -12,18 +12,18 @@
     <div class="game-container">
         <div class="choices">
             <button class="choice" data-choice="rock">
-                <img class="choice-image" src="./assets/images/rock.png" alt="Game Rock">
+                <img class="choice-image" src="./assets/images/rock.png" alt="rock choice for rock paper scissors">
             </button>
             <button class="choice" data-choice="paper">
-                <img class="choice-image" src="./assets/images/paper.png" alt="Game Paper">
+                <img class="choice-image" src="./assets/images/paper.png" alt="paper choice for rock paper scissors">
             </button>
             <button class="choice" data-choice="scissors">
-                <img class="choice-image" src="./assets/images/scissors.png" alt="Game Scissors">
+                <img class="choice-image" src="./assets/images/scissors.png" alt="scissors choice for rock paper scissors">
             </button>
         </div>
         <div class="result">
             <div class="scoreboard">
-                <h2>YOU</h2>
+                <h2 id="playername">YOU</h2>
                 <span class="score" data-your-score>0</span>
             </div>
             <div class="scoreboard" data-column>
@@ -32,18 +32,37 @@
             </div>
         </div>
     </div>
+    <!-- On page load intro screen with rules and name input-->
+
+    <div id="landing-popup">
+        <h2 class="colorfix-form">Welcome to Mundane RPS</h2>
+        <p class="colorfix-form">Mundane RPS is exactly what the name entails, 
+            a classic version of rock-paper-scissors and whether you determine it as a game of luck or skill is up to you. 
+            (You're playing against a computer, I can tell you now that it is luck)
+        </p>
+        <h3 class="colorfix-form">RULES</h3>
+        <p class="colorfix-form">The Rules are simple, it is a game of chance; rock beats scissors, paper beats rock and scissors beats paper.
+            How innovative!
+        </p>
+        <form class="colorfix-form" action="" onsubmit="return false" type="GET">
+            <label class="colorfix-form">Enter your name:</label><br>
+            <input class="colorfix-form" id="username" type="text" required aria-label="Name input"><br>
+            <button class="colorfix-form" type="submit" onclick="submitName()" aria-label="submit name button">CONFIRM</button>
+        </form>
+    </div>
+    
+
     <!-- Popup Boxes-->
         <div class="popup win" id="popup-winner">
-            <h2>You Won!</h2>
-            <p>You are the RPS Master :D</p>
-            <button class="popup-btn" onclick="resetGame()">RESET</button>
+            <h2 class="colorfix">You Won!</h2>
+            <p class="colorfix">You are the RPS Master :D</p>
+            <button class="popup-btn colorfix" onclick="resetGame()" aria-label="reset button">RESET</button>
         </div>
         <div class="popup lose" id="popup-loser">
-            <h2>You Lost!</h2>
-            <p>You are the RPS Loser :C</p>
-            <button class="popup-btn" onclick="resetGame()">RESET</button>
+            <h2 class="colorfix">You Lost!</h2>
+            <p class="colorfix">You are the RPS Loser :C</p>
+            <button class="popup-btn colorfix" onclick="resetGame()" aria-label="reset button">RESET</button>
         </div>
-    <!-- ////////////////////// -->
 <script src="assets/js/script.js"></script>
 </body>
 </html>

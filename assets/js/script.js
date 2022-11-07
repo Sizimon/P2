@@ -20,6 +20,11 @@ const CHOICES = [
         beats: 'paper',
     }
 ]
+
+/* Lets the user input their name into the form and has it stored in local storage to use in scoreboard */
+
+
+
 /**
  * adds click event to all the buttons and differentiates them based of their .name value
  */
@@ -107,4 +112,17 @@ function resetGame() {
     resets.forEach(reset => {
         reset.remove();
     });
+}
+
+/* Enter name screen popup functions */
+
+function submitName() {
+    const inputName = document.getElementById('username');
+    localStorage.setItem('username', inputName.value);
+    const storedName = localStorage.getItem('username');
+    console.log(storedName);
+    const popupBox = document.getElementById('landing-popup');
+    popupBox.classList.add('landing-popup-close');
+    const playerName = document.getElementById('playername');
+    playerName.innerHTML = localStorage.getItem('username')
 }

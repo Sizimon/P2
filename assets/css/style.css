@@ -107,21 +107,74 @@ header h1 {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.popup h2 {
-    font-family: 'Oswald', sans-serif;
-    background-color: #FFFAF1;
-}
-
-.popup p {
-    font-family: 'Oswald', sans-serif;
-    background-color: #FFFAF1;
-}
-
 .popup-btn {
     margin-bottom: 1rem;
+}
+
+.colorfix {
     font-family: 'Oswald', sans-serif;
     background-color: #FFFAF1;
 }
 
+.colorfix-form {
+    font-family: 'Oswald', sans-serif;
+    background-color: #373937;
+    color: #FFFAF1;
+}
+
+/* On Load Popup */
+
+#landing-popup {
+    width: 80vw;
+    height: 80vh;
+    background-color: #373937;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px;
+}
+
+
+#landing-popup h2 {
+    font-size: 2.5rem;
+}
+
+#landing-popup h3 {
+    font-size: 1.5rem;
+}
+
+#landing-popup p {
+    font-size: 1.25rem;
+}
+
+#landing-popup form {
+    font-size: 1.5rem;
+}
+
+#landing-popup input {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#landing-popup button {
+    margin-top: 1em;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+#landing-popup button:hover {
+    border-bottom: solid 2px #FFFAF1;
+}
+
+.landing-popup-close {
+    visibility: hidden;
+
+}
 
 
