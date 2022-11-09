@@ -174,10 +174,12 @@ header h1 {
 
 #landing-popup h2 {
     font-size: 2.5rem;
+    color: #FFE84A;
 }
 
 #landing-popup h3 {
     font-size: 1.5rem;
+    color: #F0BAF5;
 }
 
 #landing-popup p {
@@ -202,6 +204,7 @@ header h1 {
     border: none;
     outline: none;
     text-decoration: none;
+    color: #00E1D3;
 }
 
 #landing-popup button:hover {
