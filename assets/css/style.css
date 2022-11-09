@@ -227,7 +227,10 @@ footer {
     color: #FFFAF1;
     position: absolute;
     bottom: 0;
+    left: 50%;
     margin: 0;
+    transform: translate(-50%);
+    background-color: rgba(255, 250, 241, 0);
 }
 
 
