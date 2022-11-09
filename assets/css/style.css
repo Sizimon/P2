@@ -230,6 +230,7 @@ footer {
 }
 
 footer a {
+    background-color: rgba(255, 250, 241, 0);
     text-decoration: none;
     color: #00E1D3;
     
