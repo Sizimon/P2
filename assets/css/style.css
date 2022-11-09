@@ -18,17 +18,18 @@ header h1 {
     color: #FFFAF1;
     font-size: 4em;
 }
+
 /* Game Container Styling*/
 .game-container {
     margin-left: 5em;
     margin-right: 5em;
 }
+
 /* Game Choices stylings */
 .choices {
     display: flex;
     justify-content: space-evenly;
 }
-
 
 .choice {
     background: none;
@@ -46,6 +47,7 @@ header h1 {
 .choice:hover {
     transform: scale(1.1);
 }
+
 /* Results Area */
 .result {
     display: grid;
@@ -103,8 +105,6 @@ header h1 {
 }
 
 /* Pop up window */
-
-
 .popup {
     width: 200px;
     background-color: #FFFAF1;
@@ -141,7 +141,6 @@ header h1 {
 }
 
 /* On Load Popup */
-
 .bg {
     width: 100%;
     height: 100%;
@@ -174,7 +173,6 @@ header h1 {
     text-align: center;
     padding: 0px;
 }
-
 
 #landing-popup h2 {
     font-size: 2.5rem;
@@ -217,15 +215,13 @@ header h1 {
 
 .landing-popup-close {
     visibility: hidden;
-
 }
 
 /* Footer */
-
 footer {
     text-align: center;
     color: #FFFAF1;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 50%;
     margin: 0;
@@ -233,71 +229,60 @@ footer {
     background-color: rgba(255, 250, 241, 0);
 }
 
+footer a {
+    text-decoration: none;
+    color: #00E1D3;
+    
+}
 
 /* MEDIA QUERIES (380 PX MAX)*/
-
 @media screen and (max-width:380px) {
 
     header h1 {
         font-size: 2em;
     }
-
     .query-remove {
         display: none;
     }
-
     .choice {
         font-size: 2em;
     }
-
     .scoreboard {
         margin: 1em;
     }
-
     .scoreboard h2 {
         font-size: 1em;
         margin: .5rem;
     }
-
     .score {
         font-size: 1.5rem;
     }
-
     .win-lose-draw h2 {
         font-size: 1rem;
     }
-
     #landing-popup {
         height: 80vh;
     }
-
     #landing-popup h2 {
         font-size: 1.5rem;
     }
-    
     #landing-popup h3 {
         font-size: 1.5rem;
     }
-    
     #landing-popup p {
         font-size: 1rem;
     }
-    
     #landing-popup form {
         font-size: 1rem;
     }
-
     #landing-popup button {
         font-size: 1rem;
     }
-    
     #landing-popup input {
         font-size: 1rem;
         text-align: center;
         text-transform: uppercase;
     }
-
-
 }
 
 /* MEDIA QUERIES (420px MAX)*/
@@ -306,45 +291,35 @@ footer {
     header h1 {
         font-size: 2em;
     }
-
     .choice {
         font-size: 2em;
     }
-
     .scoreboard {
         margin: 1em;
     }
-
     .scoreboard h2 {
         font-size: 1em;
         margin: .5rem;
     }
-
     .score {
         font-size: 1.5rem;
     }
-
     .win-lose-draw h2 {
         font-size: 1rem;
     }
-
     #landing-popup h2 {
         font-size: 2rem;
     }
-    
     #landing-popup h3 {
         font-size: 1.5rem;
     }
-    
     #landing-popup p {
         font-size: 1.2rem;
         margin: 2rem;
     }
-    
     #landing-popup form {
         font-size: 1rem;
     }
-    
     #landing-popup input {
         font-size: 1rem;
         text-align: center;
@@ -358,15 +333,12 @@ footer {
     #landing-popup h2 {
         font-size: 3rem;
     }
-
     #landing-popup h3 {
         font-size: 3rem;
     }
-
     #landing-popup p {
         font-size: 2rem;
     }
-
     #landing-popup form {
         font-size: 2rem;
     }
@@ -378,19 +350,15 @@ footer {
     header h1 {
         font-size: 10em;
     }
-
     .choice {
         font-size: 10em;
     }
-
     .win-lose-draw h2 {
         font-size: 5em;
     }
-
     .result {
         font-size: 5em;
     }
-
     #landing-popup h2 {
         font-size: 10rem;
     }
@@ -418,16 +386,12 @@ footer {
         font-size: 5rem;
         border-radius: 6%;
     }
-
     .popup-btn {
         font-size: 5rem;
     }
-
     .score {
         font-size: 1.5em;
     }
-
-
 }
 
 
