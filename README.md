@@ -10,3 +10,18 @@
 
 Issues encountered: 
 Struggling to add images into the history match panel
+
+
+
+Credits:
+Easy Tutorials for helping to understand making the css aspect of popups
+https://www.youtube.com/c/EasyTutorialsVideo
+
+Clippy an application for clip-path-making:
+https://bennettfeely.com/clippy/
+
+Artist who designed the images for the RPS icons:
+https://www.vecteezy.com/members/nightwolfdezines
+
+WebDevSimplified who helped with code in order to create a history of the matches:
+https://github.com/WebDevSimplified/Rock-Paper-Scissors-In-JavaScript/blob/master/script.js 

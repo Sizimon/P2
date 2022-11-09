@@ -262,7 +262,7 @@ footer a {
         font-size: 1rem;
     }
     #landing-popup {
-        height: 80vh;
+        height: 100vh;
     }
     #landing-popup h2 {
         font-size: 1.5rem;
@@ -308,6 +308,9 @@ footer a {
     .win-lose-draw h2 {
         font-size: 1rem;
     }
+    #landing-popup {
+        height: 100vh;
+    }
     #landing-popup h2 {
         font-size: 2rem;
     }
@@ -330,7 +333,7 @@ footer a {
 
 /* MEDIA QUERIES TABLETS*/
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
     #landing-popup h2 {
         font-size: 3rem;
     }
