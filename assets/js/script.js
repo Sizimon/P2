@@ -28,7 +28,7 @@ const CHOICES = [
 ];
 
 /**
- * adds click event to all the buttons and differentiates them based of their .name value
+ * adds click event to all the buttons and identifies them based of their .name value
  */
 choiceButtons.forEach(choiceButton => {
     choiceButton.addEventListener('click', event => {
@@ -62,7 +62,7 @@ function makeChoice(choice) {
     }
 
 /**
- * Displays whether you won/lost or drew the game
+ * Displays whether you won/lost or if the game ended in a draw
  */
 
     function displayResult() {

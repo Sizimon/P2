@@ -8,6 +8,8 @@ body {
     margin: 0;
 }
 
+/* Sylings for header */
+
 header {
     display: flex;
     justify-content: center;
@@ -48,7 +50,7 @@ header h1 {
     transform: scale(1.1);
 }
 
-/* Results Area */
+/* Results Area/Scoreboard Styling */
 .result {
     display: grid;
     justify-content: center;
