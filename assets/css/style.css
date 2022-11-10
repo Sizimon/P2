@@ -236,7 +236,7 @@ footer a {
     
 }
 
-/* MEDIA QUERIES (380 PX MAX)*/
+/* MEDIA QUERIES (380 PX MAX) SMALL PHONES*/
 @media screen and (max-width:380px) {
 
     header h1 {
@@ -286,7 +286,7 @@ footer a {
     }
 }
 
-/* MEDIA QUERIES (420px MAX)*/
+/* MEDIA QUERIES (420px MAX) LARGE PHONES*/
 
 @media  screen and (max-width:480px) {
     header h1 {
@@ -331,7 +331,7 @@ footer a {
     }
 }
 
-/* MEDIA QUERIES TABLETS*/
+/* MEDIA QUERIES TABLETS/SMALL NOTEBOOKS*/
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
     #landing-popup h2 {
@@ -348,7 +348,7 @@ footer a {
     }
 }
 
-/* MEDIA QUERIES (3840px MINIMUM) */
+/* MEDIA QUERIES (3840px MINIMUM) LARGE DESKTOPS */
 
 @media screen and (min-width:3840px) {
     header h1 {

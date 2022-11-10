@@ -1,8 +1,14 @@
+/**
+ * Some code was helped through a guide from WebDevSimplified
+ * This includes code from lines 6-26 (although customised)
+ * and code from lines 33-39
+ */
+
 const choiceButtons = document.querySelectorAll('[data-choice]');
 const finalColumn = document.querySelector('[data-column]');
 const yourScoreSpan = document.querySelector('[data-your-score]');
-const computerScoreSpan = document.querySelector('[data-computer-score]')
-/** Global constant objects and values*/
+const computerScoreSpan = document.querySelector('[data-computer-score]');
+
 const CHOICES = [
     {
         name: 'rock',
@@ -19,18 +25,18 @@ const CHOICES = [
         image: './assets/images/scissors.png',
         beats: 'paper',
     }
-]
+];
 
 /**
  * adds click event to all the buttons and differentiates them based of their .name value
  */
 choiceButtons.forEach(choiceButton => {
     choiceButton.addEventListener('click', event => {
-        const choiceName = choiceButton.dataset.choice
-        const choice = CHOICES.find(choice => choice.name === choiceName)
+        const choiceName = choiceButton.dataset.choice;
+        const choice = CHOICES.find(choice => choice.name === choiceName);
         makeChoice(choice);
-    })
-})
+    });
+});
 
 /**
  * Creates the make choice function which is called on click in the code above
@@ -61,7 +67,7 @@ function makeChoice(choice) {
 
     function displayResult() {
         const matchResult = document.getElementById('display-result');
-        if (youWin) { matchResult.innerHTML = "You Won" 
+        if (youWin) { matchResult.innerHTML = "You Won";
         } else if (computerWin) {
             matchResult.innerHTML = "You Lost";
         } else {
@@ -90,13 +96,13 @@ function randomChoice() {
 /* Function to determine the winner based of the choice object values */
 
 function isWinner(choice, computerChoice) {
-    return choice.beats === computerChoice.name
+    return choice.beats === computerChoice.name;
 }
 
 /* Function that increments the score by one  */
 
 function incrementScore(scoreSpan) {
-    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1
+    scoreSpan.innerText = parseInt(scoreSpan.innerText) + 1;
 }
 
 /* Pop up window function */
@@ -105,20 +111,23 @@ const popupWin = document.getElementById('popup-winner');
 const popupLose = document.getElementById('popup-loser');
 
 function openPopupWinner() {
-    popupWin.classList.add('open-popup')
+    popupWin.classList.add('open-popup');
 }
 
 function openPopupLoser() {
-    popupLose.classList.add('open-popup')
+    popupLose.classList.add('open-popup');
 }
 
 /* Reset button for the game (brings everything back to default) */
 
+const matchResult = document.getElementById('display-result')
+
 function resetGame() {
-    popupWin.classList.remove('open-popup')
-    popupLose.classList.remove('open-popup')
-    yourScoreSpan.innerText = '0'
-    computerScoreSpan.innerText = '0'
+    popupWin.classList.remove('open-popup');
+    popupLose.classList.remove('open-popup');
+    yourScoreSpan.innerText = '0';
+    computerScoreSpan.innerText = '0';
+    matchResult.innerText = '...';
     const resets = document.querySelectorAll('.result-choice', 'winner');
     resets.forEach(reset => {
         reset.remove();
