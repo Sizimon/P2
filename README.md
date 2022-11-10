@@ -137,7 +137,7 @@ JS also passed with no errors other than some missing semicolons which were fixe
 
 
 ## BUGS:
-I had issues with trying to display the images in the the match history box, instead of the selection being displayed as the image, it was showing the filepath, I trying to resolve it for hours, and the following code was the fix. 
+I had issues with trying to display the images in the the match history box, instead of the selection being displayed as the image, it was showing the filepath, I was trying to resolve it for hours, and the following code was the fix. 
 ``` const imgID = choice.image;
     const img = document.createElement('img');
     img.src = imgID;
